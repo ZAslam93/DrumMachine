@@ -123,6 +123,7 @@ const bankOne = [
             <h4 className="text-center text-danger">{this.state.soundText}</h4>
           {bankOne.map((sound) => 
              <DrumPad 
+              key = {sound.id}
                id={sound.id}
                name={sound.keyTrigger}
                url={sound.url}
